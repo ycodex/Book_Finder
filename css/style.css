@@ -1,14 +1,16 @@
 @import url("https://fonts.googleapis.com/css?family=Luckiest+Guy");
 
+/* Loading Animation  */
+
 body {
-  position: absolute;
+  /* position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   width: 100%;
   height: 100%;
-  background-color: skyblue;
+  background-color: skyblue; */
 
   overflow: hidden;
   font-family: "Luckiest Guy", cursive;
@@ -69,9 +71,11 @@ body {
   }
 }
 
+/* TITLE  */
+
 #animate1 {
-  top: 20px;
-  /* position: unset; */
+  /* top: 20px;
+  position: unset; */
   font-size: 50px;
   color: #fff;
   text-align: center;
@@ -80,9 +84,11 @@ body {
     0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.4);
 }
 
+/* SEARCH BOX  */
+
 #searchbox {
   text-align: center;
-  margin-top: 50px;
+  /* margin-top: 10px; */
 }
 
 input {
@@ -94,14 +100,163 @@ input {
   border: 1px solid #ccc;
 }
 input[type="text"] {
-  width: 40%;
+  width: 80%;
+  text-align: center;
+  font-size: 20px;
   border-radius: 4px;
   border: 3px solid skyblue;
-}
-input[type="submit"]:hover {
-  background-color: skyblue;
 }
 textarea:focus,
 input:focus {
   outline: none;
 }
+
+/* RESULTS BASED */
+body {
+  background: black;
+  color: white;
+}
+
+body.fade {
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+
+body.color-no-search {
+  background: skyblue;
+}
+
+body.color-no-results {
+  background: #fa5e3d;
+}
+
+body.color-results-found {
+  background: #1e8510;
+}
+
+body.color-too-many-results {
+  background: #fa8840;
+}
+
+body
+  .container
+  .search
+  .results
+  .results-table
+  table.results
+  tbody
+  tr:nth-child(odd) {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+body .container .footer {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+body .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body .container .search .header {
+  padding-bottom: 1rem;
+}
+
+body .container .search .header h1 {
+  font-size: 4rem;
+  margin: 0.5rem;
+}
+
+body .container .search .query input {
+  width: 100%;
+  height: 5rem;
+  font-size: 2rem;
+  font-family: serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+}
+
+body .container .search .results .results-table.hide {
+  display: none;
+}
+
+body .container .search .results .results-table table.results {
+  table-layout: fixed;
+  border: 0;
+  width: 100%;
+  margin: 0;
+}
+
+@media screen and (min-width: 800px) {
+  body .container .search .results .results-table table.results {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    width: 80vw;
+  }
+}
+
+body .container .search .results .results-table table.results thead {
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 800px) {
+  body .container .search .results .results-table table.results thead {
+    font-size: 2.5rem;
+  }
+}
+
+body .container .search .results .results-table table.results tbody td {
+  padding: 0.5rem 5px;
+  word-break: break-word;
+}
+
+body .container .search .results .results-table table.results tbody tr {
+  font-size: 0.9rem;
+  max-width: 10vw;
+}
+
+@media screen and (min-width: 800px) {
+  body .container .search .results .results-table table.results tbody tr {
+    font-size: 1.25rem;
+  }
+}
+
+body .container .subfooter h3 {
+  padding: 0 4rem;
+}
+
+
+body .container .footer {
+  display: block;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  padding: 1rem;
+  font-size: 0.8rem;
+} */

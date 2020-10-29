@@ -7,10 +7,10 @@
   <title>Book Finder</title>
   <link rel="stylesheet" href="/css/style.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
+  <script src="/js/script.js"></script>
 </head>
 
-<body>
+<body class="color-no-results">
   
   <!-- Main content -->
   <div class="first">
@@ -24,13 +24,52 @@
   </div>
   <!-- search bar -->
   <div id="searchbox">
-    <input type="text" placeholder="ENTER SEARCH TERM"><input type="button" value="Submit">
+    <form action="#" class="searchForm">
+      <input type="text" class="search" placeholder="ENTER SEARCH TERM">
+    </form>
   </div>
+
+
+  <!-- Results -->
+  <div class="container">
+    <div class="search">
+  <div class="results">
+    <br>
+    <div class="noResults">
+      <h2>No Results Found</h2>
+    </div>
+    <div class="results-table">
+      
+      <table class="results">
+        <thead>
+          <tr>
+            <td width="33%">
+              BOOK
+            </td>
+            <td>
+              DESCRIPTION
+            </td>
+            <!--
+            <td>
+              Link
+            </td>-->
+          </tr>
+        </thead>
+        <tbody class="results">
+    
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+ </div>
 
 
 
   <!-- Loading animation -->
-  <div class="wrapper">
+
+
+  <!-- <div class="wrapper">
     <h1 id="animate">
       <span>Book</span>
 
@@ -38,8 +77,11 @@
       <span>FINDER</span>
 
     </h1>
-  </div>
-  <!-- Fading In  -->
+  </div>  -->
+
+
+
+  <!-- Fading In -->
   <script>
     $(window).on("load", function () {
       $(".wrapper").fadeOut("slow");
