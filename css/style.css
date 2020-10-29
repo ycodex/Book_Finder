@@ -3,16 +3,17 @@
 /* Loading Animation  */
 
 body {
-  /* position: absolute;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   width: 100%;
   height: 100%;
-  background-color: skyblue; */
+  background-color: skyblue;
 
-  overflow: hidden;
+  overflow-x: hidden;
+  margin: 0;
   font-family: "Luckiest Guy", cursive;
   -webkit-font-smoothing: antialiased;
 }
@@ -158,16 +159,10 @@ body .container .footer {
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-  overflow-x: hidden;
-}
-
 body .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-height: 100vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -250,7 +245,6 @@ body .container .subfooter h3 {
   padding: 0 4rem;
 }
 
-
 body .container .footer {
   display: block;
   position: relative;
@@ -259,4 +253,4 @@ body .container .footer {
   width: 100vw;
   padding: 1rem;
   font-size: 0.8rem;
-} */
+}

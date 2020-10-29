@@ -1,6 +1,12 @@
 var searchResultFormat = '<tr><td><a href="#" target="_blank">$title</a></td><td align="left">$desp</td></tr>';
 var totalLimit = 100;
 
+// var overflowon=document.getElementsByClassName('search');
+// if(overflowon.value){
+//     var on=document.getElementsByTagName('body');
+//     on.style.overflowX='hidden';
+// }
+
 var controls = {
     oldColor: '',
     displayResults: function() {
@@ -49,6 +55,7 @@ var controls = {
             for (var x = tableRows.length - 1; x >= 0; x--) {
                 loc.removeChild(tableRows[x]);
             }
+
 
             noResults.style.display = 'none';
             resultsTableHideable.classList.remove('hide');
