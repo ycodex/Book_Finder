@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Finder</title>
+  <link rel="stylesheet" href="/css/style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+  
+  <!-- Main content -->
+  <div class="first">
+    <h1 id="animate1">
+      <span>Book</span>
+
+      </br>
+      <span>FINDER</span>
+
+    </h1>
+  </div>
+  <!-- search bar -->
+  <div id="searchbox">
+    <input type="text" placeholder="ENTER SEARCH TERM"><input type="button" value="Submit">
+  </div>
+
+
+
+  <!-- Loading animation -->
+  <div class="wrapper">
+    <h1 id="animate">
+      <span>Book</span>
+
+      </br>
+      <span>FINDER</span>
+
+    </h1>
+  </div>
+  <!-- Fading In  -->
+  <script>
+    $(window).on("load", function () {
+      $(".wrapper").fadeOut("slow");
+     // $(".first").fadeIn(5000);
+
+    }); 
+  </script>
+</body>
+
+</html>
+

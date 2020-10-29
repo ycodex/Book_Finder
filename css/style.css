@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css?family=Luckiest+Guy");
+
+body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: skyblue;
+
+  overflow: hidden;
+  font-family: "Luckiest Guy", cursive;
+  -webkit-font-smoothing: antialiased;
+}
+.wrapper {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: skyblue;
+  position: absolute;
+}
+/* CLOUDS */
+/* body:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  margin: auto;
+  border-radius: 100%;
+  background: transparent;
+  display: block;
+} */
+/* JUMP */
+#animate {
+  /* cursor: default; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  margin: auto;
+  /* display: block; */
+}
+
+#animate {
+  top: 20px;
+  -webkit-animation: bounce 0.8s ease infinite alternate;
+
+  font-size: 50px;
+  color: #fff;
+  text-align: center;
+}
+
+/* ANIMATION */
+@-webkit-keyframes bounce {
+  100% {
+    top: -20px;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,
+      0 5px 0 #ccc, 0 6px 0 #ccc, 0 7px 0 #ccc, 0 8px 0 #ccc, 0 9px 0 #ccc,
+      0 50px 25px rgba(0, 0, 0, 0.2);
+  }
+}
+
+#animate1 {
+  top: 20px;
+  /* position: unset; */
+  font-size: 50px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,
+    0 5px 0 #ccc, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent,
+    0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+#searchbox {
+  text-align: center;
+  margin-top: 50px;
+}
+
+input {
+  font-family: "Luckiest Guy", cursive;
+  -webkit-font-smoothing: antialiased;
+  height: 40%;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+}
+input[type="text"] {
+  width: 40%;
+  border-radius: 4px;
+  border: 3px solid skyblue;
+}
+input[type="submit"]:hover {
+  background-color: skyblue;
+}
+textarea:focus,
+input:focus {
+  outline: none;
+}
