@@ -92,7 +92,23 @@ var controls = {
 window.controls = controls;
 
 
+// if(document.readyState ==="interactive"){
+//    // console.log("loaded");
+//     // rem=document.querySelector('div.loading');
+//     // rem.style.display='none';
+//     $(window).on("load", function () {
+//        // alert("loaded");
+//         $(".wrapper").fadeOut("slow");
+//         //$(".first").fadeIn(5000);
+  
+//       });
+// }
+
 document.addEventListener('DOMContentLoaded', function() {
+    // rem=document.querySelector('div.loading');
+    // rem.style.display='none';
+    // console.log(rem);
+    $(".wrapper").fadeOut("slow");
     results = document.querySelector('div.results');
     searchValue = document.querySelector('input.search');
     form = document.querySelector('form.searchForm');
@@ -145,3 +161,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 })
+

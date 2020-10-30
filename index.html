@@ -7,7 +7,7 @@
   <title>Book Finder</title>
   <link rel="stylesheet" href="/css/style.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="/js/script.js"></script>
+  
 </head>
 
 <body class="color-no-results">
@@ -68,8 +68,8 @@
 
   <!-- Loading animation -->
 
-
-  <!-- <div class="wrapper">
+<div class="loading">
+  <div class="wrapper">
     <h1 id="animate">
       <span>Book</span>
 
@@ -77,18 +77,22 @@
       <span>FINDER</span>
 
     </h1>
-  </div>  -->
+  </div> 
+</div>
 
 
 
   <!-- Fading In -->
   <script>
     $(window).on("load", function () {
+      alert("loaded");
       $(".wrapper").fadeOut("slow");
-     // $(".first").fadeIn(5000);
+      //$(".first").fadeIn(5000);
 
     }); 
   </script>
+  
+<script src="/js/script.js"></script>
 </body>
 
 </html>

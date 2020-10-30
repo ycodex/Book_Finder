@@ -1,8 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Luckiest+Guy");
 
 /* Loading Animation  */
-
 body {
+  font-family: "Luckiest Guy", cursive;
+  -webkit-font-smoothing: antialiased;
+}
+/* body {
   position: absolute;
   top: 0;
   left: 0;
@@ -16,7 +19,7 @@ body {
   margin: 0;
   font-family: "Luckiest Guy", cursive;
   -webkit-font-smoothing: antialiased;
-}
+} */
 .wrapper {
   width: 100%;
   height: 100%;
@@ -24,6 +27,7 @@ body {
   left: 0;
   background-color: skyblue;
   position: absolute;
+  font-family: "Luckiest Guy", cursive;
 }
 /* CLOUDS */
 /* body:before {
@@ -51,19 +55,19 @@ body {
   height: 100px;
   margin: auto;
   /* display: block; */
-}
-
-#animate {
   top: 20px;
-  -webkit-animation: bounce 0.8s ease infinite alternate;
+  animation: bounce 0.8s ease infinite alternate;
 
   font-size: 50px;
   color: #fff;
   text-align: center;
 }
 
+/* #animate {
+} */
+
 /* ANIMATION */
-@-webkit-keyframes bounce {
+@keyframes bounce {
   100% {
     top: -20px;
     text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,
@@ -75,8 +79,8 @@ body {
 /* TITLE  */
 
 #animate1 {
-  /* top: 20px;
-  position: unset; */
+  top: 20px;
+  /* position: unset; */
   font-size: 50px;
   color: #fff;
   text-align: center;
@@ -113,13 +117,8 @@ input:focus {
 }
 
 /* RESULTS BASED */
-body {
-  background: black;
-  color: white;
-}
 
 body.fade {
-  -webkit-transition: background-color 0.5s;
   transition: background-color 0.5s;
 }
 
@@ -155,7 +154,6 @@ body .container .footer {
 }
 
 * {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
