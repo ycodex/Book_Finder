@@ -124,7 +124,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (event.type == 'submit') event.preventDefault();
     }
 
-
+    try{
     fetch('../Database/books.json')
         .then(res => res.json())
         .then(data => {
@@ -133,7 +133,23 @@ document.addEventListener('DOMContentLoaded', function() {
             window.controls.updateResults(resultsTable, window.dataset);
             doSearch({ type: 'none' });
         });
-
+    }
+    catch(err){
+        //
+    }
+    try{
+        fetch('../Book_Finder/Database/books.json')
+            .then(res => res.json())
+            .then(data => {
+                window.dataset = data;
+                currentSet = window.dataset;
+                window.controls.updateResults(resultsTable, window.dataset);
+                doSearch({ type: 'none' });
+            });
+        }
+        catch(err){
+            //
+        }
     form.submit(doSearch);
 
     searchValue.addEventListener('input', doSearch);
