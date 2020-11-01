@@ -127,15 +127,15 @@ body.color-no-search {
 }
 
 body.color-no-results {
-  background: #fa5e3d;
+  background: #e46248;
 }
 
 body.color-results-found {
-  background: #1e8510;
+  background: #75da67;
 }
 
 body.color-too-many-results {
-  background: #fa8840;
+  background: #e98f56;
 }
 
 body

@@ -1,12 +1,6 @@
 var searchResultFormat = '<tr><td><a href="#" target="_blank">$title</a></td><td align="left">$desp</td></tr>';
 var totalLimit = 100;
 
-// var overflowon=document.getElementsByClassName('search');
-// if(overflowon.value){
-//     var on=document.getElementsByTagName('body');
-//     on.style.overflowX='hidden';
-// }
-
 var controls = {
     oldColor: '',
     displayResults: function() {
@@ -61,7 +55,7 @@ var controls = {
             resultsTableHideable.classList.remove('hide');
 
             results.forEach(r => {
-                //Not the fastest but it makes for easier to read code :>
+               
 
                
                 el = searchResultFormat
@@ -91,23 +85,8 @@ var controls = {
 };
 window.controls = controls;
 
-
-// if(document.readyState ==="interactive"){
-//    // console.log("loaded");
-//     // rem=document.querySelector('div.loading');
-//     // rem.style.display='none';
-//     $(window).on("load", function () {
-//        // alert("loaded");
-//         $(".wrapper").fadeOut("slow");
-//         //$(".first").fadeIn(5000);
-  
-//       });
-// }
-
 document.addEventListener('DOMContentLoaded', function() {
-    // rem=document.querySelector('div.loading');
-    // rem.style.display='none';
-    // console.log(rem);
+    
     $(".wrapper").fadeOut("slow");
     results = document.querySelector('div.results');
     searchValue = document.querySelector('input.search');
